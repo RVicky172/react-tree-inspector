@@ -1,0 +1,69 @@
+{
+  "name": "react-tree-inspector",
+  "version": "0.1.0",
+  "description": "A production-ready HOC and standalone component that injects a Fiber-powered interactive dev overlay for real-time React component architecture inspection.",
+  "keywords": [
+    "react",
+    "debug",
+    "devtools",
+    "fiber",
+    "inspector",
+    "hoc",
+    "component-tree",
+    "react-fiber",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Vicky Kumar (rohillavicky.172@gmail.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/react-tree-inspector.git"
+  },
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.esm.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
