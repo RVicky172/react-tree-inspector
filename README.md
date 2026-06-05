@@ -1,6 +1,8 @@
 # react-tree-inspector
 
-A production-ready Higher-Order Component (HOC) and standalone React component that injects a **floating, interactive development overlay** powered by the React Fiber internals. Open the overlay to see a real-time, collapsible tree of your entire component architecture — with props, context subscriptions, and hook counts displayed per selected node.
+An experimental Higher-Order Component (HOC) and standalone React component that injects a **floating, interactive development overlay** powered by the React Fiber internals. Open the overlay to see a real-time, collapsible tree of your entire component architecture — with props, context subscriptions, and hook counts displayed per selected node.
+
+> **Status: testing only** — This package is currently intended for local experimentation and validation. It is **not ready for production use**.
 
 > **Development-only** — This package accesses React Fiber internals (`__reactFiber$` / `__reactInternalInstance$`). It is intended exclusively for development and debugging environments.
 

@@ -1,7 +1,7 @@
 {
   "name": "react-tree-inspector",
-  "version": "0.1.0",
-  "description": "A production-ready HOC and standalone component that injects a Fiber-powered interactive dev overlay for real-time React component architecture inspection.",
+  "version": "0.1.1",
+  "description": "An experimental React Fiber tree inspector overlay for development and testing workflows.",
   "keywords": [
     "react",
     "debug",
@@ -17,7 +17,11 @@
   "author": "Vicky Kumar (rohillavicky.172@gmail.com)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-org/react-tree-inspector.git"
+    "url": "git+https://github.com/RVicky172/react-tree-inspector.git"
+  },
+  "homepage": "https://github.com/RVicky172/react-tree-inspector#readme",
+  "bugs": {
+    "url": "https://github.com/RVicky172/react-tree-inspector/issues"
   },
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
